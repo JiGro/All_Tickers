@@ -68,5 +68,5 @@ for num, ticker in enumerate(ticker_list):
 stock_df = pd.DataFrame(ticker_list, columns=['Ticker', 'Stock_Name'])
 stock_df = stock_df.drop_duplicates(subset="Ticker")
 
-# step 4 --> excel export. database export also an option depending on use case
+# step 4 --> excel export.. database export also an option depending on use case
 stock_df.to_excel("all_ticker.xlsx", index=False)
